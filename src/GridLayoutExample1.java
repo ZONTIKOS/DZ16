@@ -30,11 +30,11 @@ public class GridLayoutExample1 {
         JButton btn16 = new JButton("=");
         JButton btn13 = new JButton("/");
 
-        // Панель для размещения кнопок
+
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new GridLayout(4, 4, 10, 25));
 
-        // кнопки на панель
+
         buttonPanel.add(btn1);
         btn1.setBackground(Color.WHITE);
         buttonPanel.add(btn2);
@@ -69,16 +69,16 @@ public class GridLayoutExample1 {
         buttonPanel.add(btn13);
 
         btn13.setBackground(Color.GRAY);
-        // Устанавливаем компоновку для JFrame
+
         frameObj.setLayout(new BorderLayout());
 
-        // Добавляем текстовое поле сверху
+
         frameObj.add(textArea, BorderLayout.NORTH);
 
-        // Добавляем панель с кнопками в центр
+
         frameObj.add(buttonPanel, BorderLayout.CENTER);
 
-        // Настройки окна
+
         frameObj.setSize(300, 400);
         frameObj.setVisible(true);
         frameObj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
